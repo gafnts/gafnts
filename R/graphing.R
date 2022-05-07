@@ -19,3 +19,25 @@ you_want_it_darker <- function(...) {
     plot.margin = unit(c(.5, .5, .4, .2), "cm")
   )
 }
+
+element_round <- function(
+    fill = NULL,
+    colour = NULL,
+    size = NULL,
+    linetype = NULL,
+    color = NULL,
+    inherit.blank = FALSE,
+    radius = unit(0.1, "snpc")
+) {
+  if (!is.null(color)) colour <- color
+  if (!is.unit(radius)) radius <- unit(radius, "snpc")
+  structure(
+    list(fill = fill,
+         colour = colour,
+         size = size,
+         linetype = linetype,
+         inherit.blank = inherit.blank,
+         radius = radius),
+    class = c("element_rect_round", "element_rect", "element")
+  )
+}
