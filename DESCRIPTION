@@ -1,13 +1,14 @@
 Package: gafnts
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Personal R package of Gabriel Fuentes
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: c(person("Gabriel", "Fuentes", email = "gafntsgmail.com", role = c("aut", "cre")))
+Maintainer: gabriel Fuentes <gafnts@gmail.com>
+Description: Custom ggplot themes for my blog
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports:
+  ggplot2
 URL: https://github.com/gafnts/gafnts
 BugReports: https://github.com/gafnts/gafnts/issues
