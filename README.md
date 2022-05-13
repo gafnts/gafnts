@@ -1,4 +1,4 @@
-## My personal package 👋
+## My personal R package 👋
 
 ### Installation
 
