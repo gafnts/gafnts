@@ -1,6 +1,3 @@
-## My personal R package 👋
-
-### Installation
 
 ``` r
 # install.packages("devtools")
