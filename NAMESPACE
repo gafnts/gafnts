@@ -1,5 +1,6 @@
 # Graphing
 export(you_want_it_darker)
+export(theme_gravity)
 
 # Modeling
 export(peek)
