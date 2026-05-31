@@ -2,7 +2,7 @@
 
 AI Engineer building production systems that ship and stay running.
 
-Python, AWS, Terraform. Event-driven serverless infrastructure, LLM applications, and the architecture work underneath both.
+Python, AWS, Terraform. Architecture and infrastructure as the foundation; ML and LLM systems on top.
 
 [**Website**](https://gabriel.com.gt) · [**LinkedIn**](https://www.linkedin.com/in/gafnts/)
 
@@ -56,8 +56,6 @@ Terraform-managed event-driven AWS infrastructure for the agentic-kie library. P
 <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="pytest">
 </p>
 
-Strict typing and high coverage as defaults, not aspirations.
-
 ---
 
-📬 Writing about Agentic AI, LLM Engineering, and ML Engineering → [**gabriel.com.gt/blog**](https://gabriel.com.gt/blog/)
+📬 Writing about Software Engineering, ML Engineering and LLM Engineering → [**gabriel.com.gt/blog**](https://gabriel.com.gt/blog/)
