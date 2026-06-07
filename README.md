@@ -37,6 +37,7 @@ Terraform-managed event-driven AWS infrastructure for the agentic-kie library. P
 
 `Terraform` · `AWS` · `Lambda` · `EventBridge` · `SQS` · `DynamoDB`
 
+<a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/checks.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/checks.yml/badge.svg" alt="Quality gates"></a>
 <a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-staging.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-staging.yml/badge.svg" alt="Deploy staging"></a>
 <a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-prod.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-prod.yml/badge.svg" alt="Deploy prod"></a>
 
