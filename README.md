@@ -10,7 +10,7 @@ Python, AWS, Terraform. Architecture and infrastructure as the foundation; ML an
 
 ## Writing
 
-### [**When does agency earn its cost?**](https://gabriel.com.gt/blog/when-does-agency-earn-its-cost/) — benchmarking LLM extraction strategies on legal documents
+### [**When does agency earn its cost?**](https://gabriel.com.gt/blog/when-does-agency-earn-its-cost/) — Benchmarking LLM extraction strategies on legal documents
 
 Same documents, same schema, three model families. The agent rarely beats a single LLM call. A clean counterexample to the reflex of wrapping every task in an agent loop.
 
@@ -20,9 +20,9 @@ Same documents, same schema, three model families. The agent rarely beats a sing
 
 ## Projects
 
-### [**agentic-kie**](https://github.com/gafnts/agentic-kie) — schema-driven key information extraction from documents
+### [**agentic-kie**](https://github.com/gafnts/agentic-kie) — Schema-driven key information extraction from documents
 
-Typed Python library where a PDF enters as a file path and leaves as a validated Pydantic instance. Handles text-layer detection, OCR routing, image rendering, LLM orchestration, and retry logic. Two extraction strategies — single-pass and agentic ReAct — satisfy the same protocol and swap without touching downstream code. Model-agnostic via LangChain's `BaseChatModel`.
+Typed Python library where a PDF enters as a file path and leaves as a validated Pydantic instance. Handles text-layer detection, OCR routing, image rendering, LLM orchestration, and retry logic. Two extraction strategies—single-pass and agentic ReAct—satisfy the same protocol and swap without touching downstream code. Model-agnostic via LangChain's `BaseChatModel`.
 
 `Python` · `LangChain` · `Pydantic` · `ReAct`
 
@@ -31,11 +31,11 @@ Typed Python library where a PDF enters as a file path and leaves as a validated
 <a href="https://codecov.io/github/gafnts/agentic-kie"><img src="https://codecov.io/github/gafnts/agentic-kie/graph/badge.svg" alt="codecov"></a>
 <a href="https://pypi.org/project/agentic-kie/"><img src="https://img.shields.io/pypi/v/agentic-kie" alt="PyPI"></a>
 
-### [**agentic-kie-deploy**](https://github.com/gafnts/agentic-kie-deploy) — production-grade serverless AWS pipeline
+### [**agentic-kie-deploy**](https://github.com/gafnts/agentic-kie-deploy) — Production-grade serverless AWS pipeline
 
-Terraform-managed event-driven AWS infrastructure for the agentic-kie library. Pre-signed S3 uploads trigger an event-driven Lambda extractor via EventBridge and SQS, writing structured results to DynamoDB. Environment-scoped IAM, plan-bound prod deployments, and ADR-driven architecture decisions.
+Terraform-provisioned, event-driven AWS infrastructure that turns the `agentic-kie` library into an asynchronous extraction service. A caller asks for an upload slot, pushes a document straight to S3 via a pre-signed URL, and reads the structured result from an address it already holds—everything between is fully decoupled. In flight: API Gateway, EventBridge, an SQS-buffered containerized Lambda extractor, a DynamoDB system of record, and S3 result delivery, with environment-scoped IAM, plan-bound prod deploys, and ADR-driven architecture decisions.
 
-`Terraform` · `AWS` · `Lambda` · `EventBridge` · `SQS` · `DynamoDB`
+`Terraform` · `AWS` · `API Gateway` · `Lambda` · `EventBridge` · `SQS` · `DynamoDB` · `S3`
 
 <a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/checks.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/checks.yml/badge.svg" alt="Quality gates"></a>
 <a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-staging.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-staging.yml/badge.svg" alt="Deploy staging"></a>
@@ -59,4 +59,4 @@ Terraform-managed event-driven AWS infrastructure for the agentic-kie library. P
 
 ---
 
-📬 Writing about Software Engineering, ML Engineering and LLM Engineering → [**gabriel.com.gt/blog**](https://gabriel.com.gt/blog/)
+📬 Writing about Software Engineering, MLOps Engineering and LLM Engineering → [**gabriel.com.gt/blog**](https://gabriel.com.gt/blog/)
