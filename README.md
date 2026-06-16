@@ -2,8 +2,6 @@
 
 AI Engineer building production systems that ship and stay running.
 
-Python, AWS, Terraform. Architecture and infrastructure as the foundation; ML and LLM systems on top.
-
 [**Website**](https://gabriel.com.gt) · [**LinkedIn**](https://www.linkedin.com/in/gafnts/)
 
 ---
