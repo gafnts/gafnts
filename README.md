@@ -33,7 +33,7 @@ Typed Python library where a PDF enters as a file path and leaves as a validated
 
 ### [**agentic-kie-deploy**](https://github.com/gafnts/agentic-kie-deploy) — Production-grade serverless AWS pipeline
 
-Terraform-provisioned, event-driven AWS infrastructure that turns the `agentic-kie` library into an asynchronous extraction service. A caller asks for an upload slot, pushes a document straight to S3 via a pre-signed URL, and reads the structured result from an address it already holds—everything between is fully decoupled. In flight: API Gateway, EventBridge, an SQS-buffered containerized Lambda extractor, a DynamoDB system of record, and S3 result delivery, with environment-scoped IAM, plan-bound prod deploys, and ADR-driven architecture decisions.
+Terraform-provisioned, event-driven AWS infrastructure that turns the `agentic-kie` library into an asynchronous extraction service. A caller asks for an upload slot, pushes a document straight to S3 via a pre-signed URL, and reads the structured result from an address it already holds—everything in between stays decoupled. Environment-scoped IAM, plan-bound prod deploys, and ADR-driven architecture decisions throughout.
 
 `Terraform` · `AWS` · `API Gateway` · `Lambda` · `EventBridge` · `SQS` · `DynamoDB` · `S3`
 
