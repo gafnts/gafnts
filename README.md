@@ -8,6 +8,12 @@ AI Engineer building production systems that ship and stay running.
 
 ## Writing
 
+### [**A library is not a service**](https://gabriel.com.gt/blog/a-library-is-not-a-service/) — What it takes to put an LLM information extractor behind real traffic
+
+Part one found the winning configuration; part two builds the event-driven AWS service around it and puts both extraction strategies under the same 200-document burst. The system trades latency, never cost, for stability. Under load, the agentic queue drains at half the speed, a premium the offline benchmark couldn't see.
+
+`MLOps` · `AWS` · `Load Testing`
+
 ### [**When does agency earn its cost?**](https://gabriel.com.gt/blog/when-does-agency-earn-its-cost/) — Benchmarking LLM extraction strategies on legal documents
 
 Same documents, same schema, three model families. The agent rarely beats a single LLM call. A clean counterexample to the reflex of wrapping every task in an agent loop.
@@ -17,6 +23,16 @@ Same documents, same schema, three model families. The agent rarely beats a sing
 ---
 
 ## Projects
+
+### [**agentic-kie-deploy**](https://github.com/gafnts/agentic-kie-deploy) — Production-grade asynchronous AWS pipeline
+
+Terraform-provisioned, event-driven AWS infrastructure that turns the `agentic-kie` library into an asynchronous extraction service. A caller asks for an upload slot, pushes a document straight to S3 via a pre-signed URL, and reads the structured result from an address it already holds—everything in between stays decoupled.
+
+`Terraform` · `AWS` · `API Gateway` · `Lambda` · `EventBridge` · `SQS` · `DynamoDB` · `S3`
+
+<a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/checks.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/checks.yml/badge.svg" alt="Quality gates"></a>
+<a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-staging.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-staging.yml/badge.svg" alt="Deploy staging"></a>
+<a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-prod.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-prod.yml/badge.svg" alt="Deploy prod"></a>
 
 ### [**agentic-kie**](https://github.com/gafnts/agentic-kie) — Schema-driven key information extraction from documents
 
@@ -28,16 +44,6 @@ Typed Python library where a PDF enters as a file path and leaves as a validated
 <a href="https://github.com/gafnts/agentic-kie/actions/workflows/cd.yml"><img src="https://github.com/gafnts/agentic-kie/actions/workflows/cd.yml/badge.svg" alt="CD"></a>
 <a href="https://codecov.io/github/gafnts/agentic-kie"><img src="https://codecov.io/github/gafnts/agentic-kie/graph/badge.svg" alt="codecov"></a>
 <a href="https://pypi.org/project/agentic-kie/"><img src="https://img.shields.io/pypi/v/agentic-kie" alt="PyPI"></a>
-
-### [**agentic-kie-deploy**](https://github.com/gafnts/agentic-kie-deploy) — Production-grade serverless AWS pipeline
-
-Terraform-provisioned, event-driven AWS infrastructure that turns the `agentic-kie` library into an asynchronous extraction service. A caller asks for an upload slot, pushes a document straight to S3 via a pre-signed URL, and reads the structured result from an address it already holds—everything in between stays decoupled.
-
-`Terraform` · `AWS` · `API Gateway` · `Lambda` · `EventBridge` · `SQS` · `DynamoDB` · `S3`
-
-<a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/checks.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/checks.yml/badge.svg" alt="Quality gates"></a>
-<a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-staging.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-staging.yml/badge.svg" alt="Deploy staging"></a>
-<a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-prod.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-prod.yml/badge.svg" alt="Deploy prod"></a>
 
 ---
 
@@ -57,4 +63,4 @@ Terraform-provisioned, event-driven AWS infrastructure that turns the `agentic-k
 
 ---
 
-📬 Writing about Software Engineering, MLOps Engineering and LLM Engineering → [**gabriel.com.gt/blog**](https://gabriel.com.gt/blog/)
+📬 Writing about Software Engineering, MLOps and LLM Engineering → [**gabriel.com.gt/blog**](https://gabriel.com.gt/blog/)
