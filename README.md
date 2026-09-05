@@ -1,6 +1,8 @@
 # Gabriel Fuentes
 
-AI engineer building the infrastructure that keeps models running in production. Writing about LLM engineering, MLOps and system design.
+I'm an AI engineer based in Guatemala City. I came up as a data scientist, which mostly taught me that a model working is only half of the problem. The rest starts after: building the system around it, keeping it running, and knowing what to do when it drifts.
+
+That's why I learned the other half. Event-driven architectures, serverless inference, infrastructure as code, and deployment pipelines. Most of my work now covers the whole path, from the model to the infrastructure to the thing users actually touch.
 
 [**Website**](https://gabriel.com.gt) · [**LinkedIn**](https://www.linkedin.com/in/gafnts/)
 
