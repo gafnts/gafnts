@@ -1,6 +1,6 @@
 # Gabriel Fuentes
 
-AI Engineer building production systems that ship and stay running.
+AI engineer building the infrastructure that keeps models running in production. Writing about LLM engineering, MLOps and system design.
 
 [**Website**](https://gabriel.com.gt) · [**LinkedIn**](https://www.linkedin.com/in/gafnts/)
 
