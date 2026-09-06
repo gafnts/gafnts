@@ -4,7 +4,7 @@ I'm an AI engineer based in Guatemala City. I came up as a data scientist, which
 
 That's why I learned the other half. Event-driven architectures, serverless inference, infrastructure as code, and deployment pipelines. Most of my work now covers the whole path, from the model to the infrastructure to the thing users actually touch.
 
-[**Website**](https://gabriel.com.gt) · [**LinkedIn**](https://www.linkedin.com/in/gafnts/)
+[**Website**](https://gabriel.com.gt) · [**Portfolio**](https://gabriel.com.gt/portfolio/) · [**LinkedIn**](https://www.linkedin.com/in/gafnts/)
 
 ---
 
@@ -22,7 +22,7 @@ Terraform-provisioned, event-driven AWS infrastructure that turns the `agentic-k
 
 ### [**agentic-kie**](https://github.com/gafnts/agentic-kie) — Schema-driven key information extraction from documents
 
-Typed Python library where a PDF enters as a file path and leaves as a validated Pydantic instance. Handles text-layer detection, OCR routing, image rendering, LLM orchestration, and retry logic. Two extraction strategies—single-pass and agentic ReAct—satisfy the same protocol and swap without touching downstream code. Model-agnostic via LangChain's `BaseChatModel`.
+Typed Python library where a PDF enters as a file path and leaves as a validated Pydantic instance. Handles text-layer detection, OCR routing, image rendering, LLM orchestration, and retry logic. Two extraction strategies (single-pass and agentic ReAct) satisfy the same protocol and swap without touching downstream code. Model-agnostic via LangChain's `BaseChatModel`.
 
 `Python` · `LangChain` · `Pydantic` · `ReAct`
 
