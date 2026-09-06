@@ -8,22 +8,6 @@ That's why I learned the other half. Event-driven architectures, serverless infe
 
 ---
 
-## Writing
-
-### [**A library is not a service**](https://gabriel.com.gt/blog/a-library-is-not-a-service/) — What it takes to put an LLM information extractor behind real traffic
-
-Part one found the winning configuration; part two builds the event-driven AWS service around it and puts both extraction strategies under the same 200-document burst. The system trades latency, never cost, for stability. Under load, the agentic queue drains at half the speed, a premium the offline benchmark couldn't see.
-
-`MLOps` · `AWS` · `Load Testing`
-
-### [**When does agency earn its cost?**](https://gabriel.com.gt/blog/when-does-agency-earn-its-cost/) — Benchmarking LLM extraction strategies on legal documents
-
-Same documents, same schema, three model families. The agent rarely beats a single LLM call. A clean counterexample to the reflex of wrapping every task in an agent loop.
-
-`LLM Engineering` · `Agents` · `Evals`
-
----
-
 ## Projects
 
 ### [**agentic-kie-deploy**](https://github.com/gafnts/agentic-kie-deploy) — Production-grade asynchronous AWS pipeline
@@ -46,6 +30,22 @@ Typed Python library where a PDF enters as a file path and leaves as a validated
 <a href="https://github.com/gafnts/agentic-kie/actions/workflows/cd.yml"><img src="https://github.com/gafnts/agentic-kie/actions/workflows/cd.yml/badge.svg" alt="CD"></a>
 <a href="https://codecov.io/github/gafnts/agentic-kie"><img src="https://codecov.io/github/gafnts/agentic-kie/graph/badge.svg" alt="codecov"></a>
 <a href="https://pypi.org/project/agentic-kie/"><img src="https://img.shields.io/pypi/v/agentic-kie" alt="PyPI"></a>
+
+---
+
+## Writing
+
+### [**A library is not a service**](https://gabriel.com.gt/blog/a-library-is-not-a-service/) — What it takes to put an LLM information extractor behind real traffic
+
+Part one found the winning configuration; part two builds the event-driven AWS service around it and puts both extraction strategies under the same 200-document burst. The system trades latency, never cost, for stability. Under load, the agentic queue drains at half the speed, a premium the offline benchmark couldn't see.
+
+`MLOps` · `AWS` · `Load Testing`
+
+### [**When does agency earn its cost?**](https://gabriel.com.gt/blog/when-does-agency-earn-its-cost/) — Benchmarking LLM extraction strategies on legal documents
+
+Same documents, same schema, three model families. The agent rarely beats a single LLM call. A clean counterexample to the reflex of wrapping every task in an agent loop.
+
+`LLM Engineering` · `Agents` · `Evals`
 
 ---
 
