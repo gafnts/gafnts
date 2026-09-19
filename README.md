@@ -65,4 +65,4 @@ Same documents, same schema, three model families. The agent rarely beats a sing
 
 ---
 
-📬 Writing about Software Engineering, MLOps and LLM Engineering → [**gabriel.com.gt/blog**](https://gabriel.com.gt/blog/)
+📬 Writing about LLM engineering, MLOps and system design → [**gabriel.com.gt/blog**](https://gabriel.com.gt/blog/)
