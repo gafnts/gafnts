@@ -10,19 +10,23 @@ That's why I learned the other half. Event-driven architectures, serverless infe
 
 ## Projects
 
-### [**agentic-kie-deploy**](https://github.com/gafnts/agentic-kie-deploy) — Production-grade asynchronous AWS pipeline
+### [**Faro**](https://github.com/gafnts/factored-hackathon-2026-gafnts) — Card support agent for a synthetic bank, in Spanish and Portuguese
 
-Terraform-provisioned, event-driven AWS infrastructure that turns the `agentic-kie` library into an asynchronous extraction service. A caller asks for an upload slot, pushes a document straight to S3 via a pre-signed URL, and reads the structured result from an address it already holds—everything in between stays decoupled.
+Built solo in 10 days for the Factored AI & Data Hackathon 2026, where it took first place among 80+ submissions. The model reads and writes the language; code decides every step in a LangGraph workflow on Bedrock AgentCore, reaches the bank's tools only through Cedar policies at its Gateway, and reports a block only after reading the card back. Graded offline by an independent oracle on 608 held-out conversations: 65% resolved without a person against 43% with keyword rules in place of the model, and zero disclosures or unauthorized actions for either. The model buys understanding, not safety.
 
-`Terraform` · `AWS` · `API Gateway` · `Lambda` · `EventBridge` · `SQS` · `DynamoDB` · `S3`
+`Python` · `LangGraph` · `Bedrock AgentCore` · `Cedar` · `Cognito` · `DynamoDB` · `dbt` · `Terraform`
 
-<a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/checks.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/checks.yml/badge.svg" alt="Quality gates"></a>
-<a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-staging.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-staging.yml/badge.svg" alt="Deploy staging"></a>
-<a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-prod.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-prod.yml/badge.svg" alt="Deploy prod"></a>
+<a href="https://github.com/gafnts/factored-hackathon-2026-gafnts/actions/workflows/quality-gates.yml"><img src="https://github.com/gafnts/factored-hackathon-2026-gafnts/actions/workflows/quality-gates.yml/badge.svg" alt="Quality gates"></a>
+<a href="https://github.com/gafnts/factored-hackathon-2026-gafnts/actions/workflows/deploy-prototype.yml"><img src="https://github.com/gafnts/factored-hackathon-2026-gafnts/actions/workflows/deploy-prototype.yml/badge.svg" alt="Deploy prototype"></a>
+<a href="https://faro.gabriel.com.gt"><img src="https://img.shields.io/website?url=https%3A%2F%2Ffaro.gabriel.com.gt&label=prototype&up_message=live&down_message=down" alt="Prototype"></a>
 
-### [**agentic-kie**](https://github.com/gafnts/agentic-kie) — Schema-driven key information extraction from documents
+### [**agentic-kie**](https://github.com/gafnts/agentic-kie) — Schema-driven document extraction, from library to production service
 
-Typed Python library where a PDF enters as a file path and leaves as a validated Pydantic instance. Handles text-layer detection, OCR routing, image rendering, LLM orchestration, and retry logic. Two extraction strategies (single-pass and agentic ReAct) satisfy the same protocol and swap without touching downstream code. Model-agnostic via LangChain's `BaseChatModel`.
+One project in two repositories: a typed extraction library, benchmarked across three model providers, and the event-driven AWS service that puts it behind real traffic.
+
+<dl><dd>
+
+**[`agentic-kie`](https://github.com/gafnts/agentic-kie): the library.** A PDF enters as a file path and leaves as a validated Pydantic instance; text-layer detection, OCR routing, LLM orchestration and retries happen in between. Single-pass and agentic ReAct strategies satisfy the same protocol and swap without touching downstream code, on any LangChain `BaseChatModel`. Across 12 configurations on Kleister NDA, single-pass dominates.
 
 `Python` · `LangChain` · `Pydantic` · `ReAct`
 
@@ -30,6 +34,18 @@ Typed Python library where a PDF enters as a file path and leaves as a validated
 <a href="https://github.com/gafnts/agentic-kie/actions/workflows/cd.yml"><img src="https://github.com/gafnts/agentic-kie/actions/workflows/cd.yml/badge.svg" alt="CD"></a>
 <a href="https://codecov.io/github/gafnts/agentic-kie"><img src="https://codecov.io/github/gafnts/agentic-kie/graph/badge.svg" alt="codecov"></a>
 <a href="https://pypi.org/project/agentic-kie/"><img src="https://img.shields.io/pypi/v/agentic-kie" alt="PyPI"></a>
+
+</dd><dd>
+
+**[`agentic-kie-deploy`](https://github.com/gafnts/agentic-kie-deploy): the deployment.** Terraform-provisioned AWS infrastructure that turns the library into an asynchronous extraction service. A caller pushes a document straight to S3 through a pre-signed URL and reads the structured result from an address it already holds; EventBridge and SQS feed a container-image Lambda in between. Under a 200-document burst, the agentic queue drains at half the speed.
+
+`Terraform` · `AWS` · `API Gateway` · `Lambda` · `EventBridge` · `SQS` · `DynamoDB` · `S3`
+
+<a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/checks.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/checks.yml/badge.svg" alt="Quality gates"></a>
+<a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-staging.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-staging.yml/badge.svg" alt="Deploy staging"></a>
+<a href="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-prod.yml"><img src="https://github.com/gafnts/agentic-kie-deploy/actions/workflows/deploy-prod.yml/badge.svg" alt="Deploy prod"></a>
+
+</dd></dl>
 
 ---
 
@@ -65,4 +81,4 @@ Same documents, same schema, three model families. The agent rarely beats a sing
 
 ---
 
-📬 Writing about LLM engineering, MLOps and system design → [**gabriel.com.gt/blog**](https://gabriel.com.gt/blog/)
+📬 Writing about agentic AI, LLM engineering and MLOps → [**gabriel.com.gt/blog**](https://gabriel.com.gt/blog/)
