@@ -10,14 +10,14 @@ That's why I learned the other half. Event-driven architectures, serverless infe
 
 ## Projects
 
-### [**Faro**](https://github.com/gafnts/factored-hackathon-2026-gafnts) — Card support agent for a synthetic bank, in Spanish and Portuguese
+### [**Faro**](https://github.com/gafnts/factored-hackathon-2026-faro) — Card support agent for a synthetic bank, in Spanish and Portuguese
 
 Built solo in 10 days for the Factored AI & Data Hackathon 2026, where it took first place among 80+ submissions. The model reads and writes the language; code decides every step in a LangGraph workflow on Bedrock AgentCore, reaches the bank's tools only through Cedar policies at its Gateway, and reports a block only after reading the card back. Graded offline by an independent oracle on 608 held-out conversations: 65% resolved without a person against 43% with keyword rules in place of the model, and zero disclosures or unauthorized actions for either. The model buys understanding, not safety.
 
 `Python` · `LangGraph` · `Bedrock AgentCore` · `Cedar` · `Cognito` · `DynamoDB` · `dbt` · `Terraform`
 
-<a href="https://github.com/gafnts/factored-hackathon-2026-gafnts/actions/workflows/quality-gates.yml"><img src="https://github.com/gafnts/factored-hackathon-2026-gafnts/actions/workflows/quality-gates.yml/badge.svg" alt="Quality gates"></a>
-<a href="https://github.com/gafnts/factored-hackathon-2026-gafnts/actions/workflows/deploy-prototype.yml"><img src="https://github.com/gafnts/factored-hackathon-2026-gafnts/actions/workflows/deploy-prototype.yml/badge.svg" alt="Deploy prototype"></a>
+<a href="https://github.com/gafnts/factored-hackathon-2026-faro/actions/workflows/quality-gates.yml"><img src="https://github.com/gafnts/factored-hackathon-2026-faro/actions/workflows/quality-gates.yml/badge.svg" alt="Quality gates"></a>
+<a href="https://github.com/gafnts/factored-hackathon-2026-faro/actions/workflows/deploy-prototype.yml"><img src="https://github.com/gafnts/factored-hackathon-2026-faro/actions/workflows/deploy-prototype.yml/badge.svg" alt="Deploy prototype"></a>
 <a href="https://faro.gabriel.com.gt"><img src="https://img.shields.io/website?url=https%3A%2F%2Ffaro.gabriel.com.gt&label=prototype&up_message=live&down_message=down" alt="Prototype"></a>
 
 ### [**agentic-kie**](https://github.com/gafnts/agentic-kie) — Schema-driven document extraction, from library to production service
