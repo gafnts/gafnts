@@ -35,7 +35,7 @@ One project in two repositories: a typed extraction library, benchmarked across 
 <a href="https://github.com/gafnts/agentic-kie/actions/workflows/cd.yml"><img src="https://github.com/gafnts/agentic-kie/actions/workflows/cd.yml/badge.svg" alt="CD"></a>
 <a href="https://codecov.io/github/gafnts/agentic-kie"><img src="https://codecov.io/github/gafnts/agentic-kie/graph/badge.svg" alt="codecov"></a>
 <a href="https://pepy.tech/projects/agentic-kie"><img src="https://img.shields.io/pepy/dt/agentic-kie" alt="Downloads"></a>
-<a href="https://pypi.org/project/agentic-kie/"><img src="https://img.shields.io/pypi/v/agentic-kie" alt="PyPI"></a>
+<a href="https://pypi.org/project/agentic-kie/"><img src="https://img.shields.io/pypi/v/agentic-kie?color=blue" alt="PyPI"></a>
 
 </dd><dd>
 
