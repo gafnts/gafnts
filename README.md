@@ -17,6 +17,7 @@ Built solo in 10 days for the Factored AI & Data Hackathon 2026, where it took f
 `Python` · `LangGraph` · `Bedrock AgentCore` · `Cedar` · `Cognito` · `DynamoDB` · `dbt` · `Terraform`
 
 <a href="https://github.com/gafnts/factored-hackathon-2026-faro/actions/workflows/quality-gates.yml"><img src="https://github.com/gafnts/factored-hackathon-2026-faro/actions/workflows/quality-gates.yml/badge.svg" alt="Quality gates"></a>
+<a href="https://github.com/gafnts/factored-hackathon-2026-faro/actions/workflows/advisories.yml"><img src="https://github.com/gafnts/factored-hackathon-2026-faro/actions/workflows/advisories.yml/badge.svg" alt="Advisories"></a>
 <a href="https://github.com/gafnts/factored-hackathon-2026-faro/actions/workflows/deploy-prototype.yml"><img src="https://github.com/gafnts/factored-hackathon-2026-faro/actions/workflows/deploy-prototype.yml/badge.svg" alt="Deploy prototype"></a>
 <a href="https://faro.gabriel.com.gt"><img src="https://img.shields.io/website?url=https%3A%2F%2Ffaro.gabriel.com.gt&label=prototype&up_message=live&down_message=down" alt="Prototype"></a>
 
@@ -34,6 +35,7 @@ One project in two repositories: a typed extraction library, benchmarked across 
 <a href="https://github.com/gafnts/agentic-kie/actions/workflows/cd.yml"><img src="https://github.com/gafnts/agentic-kie/actions/workflows/cd.yml/badge.svg" alt="CD"></a>
 <a href="https://codecov.io/github/gafnts/agentic-kie"><img src="https://codecov.io/github/gafnts/agentic-kie/graph/badge.svg" alt="codecov"></a>
 <a href="https://pypi.org/project/agentic-kie/"><img src="https://img.shields.io/pypi/v/agentic-kie" alt="PyPI"></a>
+<a href="https://pepy.tech/projects/agentic-kie"><img src="https://img.shields.io/pepy/dt/agentic-kie" alt="Downloads"></a>
 
 </dd><dd>
 
